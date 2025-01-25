@@ -10,11 +10,6 @@
     --fonte-texto: 'Montserrat', sans-serif;
     --tamanho-titulo: 2.25rem;
     --tamanho-texto: 1.5rem;
-/*     
-    --cor-primaria: #5800FF;
-    --cor-secundaria: #72FFFF;
-    --cor-destaque:#00D7FF;
-    --cor-hover:  #0096FF; */
 }
 
 *{
@@ -29,18 +24,30 @@ body{
     width: 100vw;
 }
 
-.cabecalho__menu {
-    margin: 4% 0 0 18%;
+footer,
+header nav {    
+    padding: 1vh 0 1vh 18%;
+    background-color: var(--cor-secundaria);
     display: flex;
     gap: 5vw;
 }
 
-.cabecalho__menu__itens {
-    color: var(--cor-destaque);
-    font-weight: 600;
+footer {
+    padding: 1vh 0;
+    justify-content: center;
+}
+
+nav a,
+footer a {
     font-size: var(--tamanho-texto);
-    font-family: var(--fonte-texto); 
+    font-family: var(--fonte-texto);
+    color: var(--cor-primaria);
     text-decoration: none;
+}
+nav a:hover,
+footer a:hover {
+    font-weight: bold;
+    color: var(--cor-destaque);
 }
 
 .apresentacao{
@@ -77,7 +84,6 @@ body{
     font-size: var(--tamanho-texto);
     font-family: var(--fonte-texto);
     width: 100%;
-    text-align: justify;
 }
 
 .apresentacao__links{
@@ -100,7 +106,7 @@ body{
     border-radius: 8px;
     font-size: var(--tamanho-texto);
     font-weight: 600;
-    padding: 3vh 0;
+    padding: 2vh 0;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-texto);
@@ -125,15 +131,6 @@ body{
 .imagem {
     width: 22vw;
     align-self: baseline, left;
-}
-
-.rodape {
-    padding: 3vh 0;
-    color: var(--cor-secundaria);
-    background-color: var(--cor-destaque);
-    text-align: center;
-    font-family: var(--fonte-texto);
-    font-size: var(--tamanho-texto);
 }
 
 
