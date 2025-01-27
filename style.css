@@ -137,13 +137,14 @@ footer a:hover {
 @media (max-width: 1000px) {
     .cabecalho {
         padding: 3vh 0;
+        align-content: center;
     }
 
     .cabecalho__menu {
         width: auto;
         display: flex;
         justify-content: space-evenly;
-        margin: 5% 10%;
+        margin: 5% 0;
         margin-bottom: 0;
     }
     
